@@ -1,7 +1,8 @@
 function isAboveAgeX(MIN, age) {
 	return age > MIN;
 }
-
+isAboveAgeX(18, 20);
+isAboveAgeX(65, 20);
 
 function isAboveAge(MIN) {
   return function(age) { return age > MIN; };

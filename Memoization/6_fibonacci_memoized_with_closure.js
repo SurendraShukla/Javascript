@@ -13,7 +13,7 @@ var factorial = (function ( ) {
 
 	return recur;
 
-}( ));
+}());
 
 
 // Try for below and see response time

@@ -5,7 +5,7 @@ function printArgs(x, y) {
 		console.log(arguments[index]);
 	}
 }
-function printArgs(x, y, z) {
+function printArgs() {
 	console.log('inside 3 param function');
 	for(var index in arguments) {
 		console.log(arguments[index]);
