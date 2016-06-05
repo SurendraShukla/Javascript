@@ -11,7 +11,10 @@ console.log("j=["+j+"]");
 
 function fun() {
 	console.log("i=["+i+"]");
-	var k=1;
+	var k=30;
 }
 fun();
 console.log("k=["+k+"]");
+
+// IE7; LET for block level scope
+// let l=40;

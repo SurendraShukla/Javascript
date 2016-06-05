@@ -1,7 +1,7 @@
-var name = "ADP";
+var name = "Surendra";
 
 (function () {
     console.log("Previous name was " + name);
-    name = "CDK";
+    var name = "Suren";
     console.log("New name is " + name);
 })();
