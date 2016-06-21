@@ -33,23 +33,19 @@ var partialAny = (function() {
     return partialAny;
 }());
 
-function hex(r, g, b) {
-    return '#' + r + g + b;
+function rgbCreator(red, green, blue, alpha) {
+    return 'rgba(' + red + ',' + green + ', ' + blue + ', ' + alpha + ');';
 }
 
-hex('11', '22', '33'); // "#112233"
+//rgbCreator(204, 160, 29, .9);
 
 // A more visually-appealing placeholder.
 var __ = partialAny._;
 
-var redMax = partialAny(hex, 'ff', __, __);
-redMax('11', '22');    // "#ff1122"
+var halfOpacity = partialAny(rgbCreator, __, __, __,.5);
+halfOpacity(204, 160, 29);
 
-var greenMax = partialAny(hex, __, 'ff');
-greenMax('33', '44');  // "#33ff44"
 
-var blueMax = partialAny(hex, __, __, 'ff');
-blueMax('55', '66');   // "#5566ff"
-
-var magentaMax = partialAny(hex, 'ff', __, 'ff');
-magentaMax('77');      // "#ff77ff"
+var shadeOfGrey = partialAny(rgbCreator, 0, 0, 0, __);
+shadeOfGrey(.1);
+shadeOfGrey(.9);

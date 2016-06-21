@@ -1,4 +1,4 @@
-function partial(fn /*, args...*/) {
+function partialLeft(fn /*, args...*/) {
     // A reference to the Array#slice method.
     var slice = Array.prototype.slice;
     // Convert arguments object to an array, removing the first argument.
@@ -12,28 +12,15 @@ function partial(fn /*, args...*/) {
 }
 
 
-// Add all arguments passed in by iterating over the `arguments` object.
-function addAllTheThings() {
-    var sum = 0;
-    for (var i = 0; i < arguments.length; i++) {
-        sum += arguments[i];
-    }
-    return sum;
+function wedgie(a, b) {
+    return a + ' gives ' + b + ' a wedgie.';
 }
 
-addAllTheThings(1, 2);            // 3
-addAllTheThings(1, 2, 3);         // 6
-addAllTheThings(1, 4, 9, 16, 25); // 55
 
-// More specific functions.
-var addOne = partial(addAllTheThings, 1);
-addOne()                          // 1
-addOne(2);                        // 3
-addOne(2, 3);                     // 6
-addOne(4, 9, 16, 25);             // 55
+var joeGivesWedgie = partialLeft(wedgie, 'Joe');
+joeGivesWedgie('Ron');    // "Joe gives Ron a wedgie."
+joeGivesWedgie('Bob');    // "Joe gives Bob a wedgie."
 
-var addTen = partial(addAllTheThings, 1, 2, 3, 4);
-addTen();                         // 10
-addTen(2);                        // 12
-addTen(2, 3);                     // 15
-addTen(4, 9, 16, 25);             // 64
+var joeGivesWedgie = partialLeft(wedgie, 'Joe', 'Suren');
+joeGivesWedgie('Ron');    // "Joe gives Suren a wedgie."
+

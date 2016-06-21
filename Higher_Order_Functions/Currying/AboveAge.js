@@ -14,4 +14,4 @@ isAdult(20);
 var isSenior = isAboveAge(65);
 isSenior(20);
 
-isAboveAge(18)(20)
+isAboveAge(18)(20);

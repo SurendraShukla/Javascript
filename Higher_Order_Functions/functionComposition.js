@@ -16,12 +16,14 @@ function square(fn) {
 	}
 }
 
-function indentity(val) {
+function identity(val) {
 	return val;
 }
 
-//indentity(2);
-//square(indentity)(2);
-//double(square(indentity))(2);
-//negate(double(square(indentity)))(2);
+
+negate(double(square(identity)))(2);
+//identity(2);
+//square(identity)(2);
+//double(square(identity))(2);
+
 

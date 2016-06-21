@@ -15,11 +15,7 @@ function partialRight(fn /*, args...*/) {
 function wedgie(a, b) {
     return a + ' gives ' + b + ' a wedgie.';
 }
-//
-//var joeGivesWedgie = partial(wedgie, 'Joe');
-//joeGivesWedgie('Ron');    // "Joe gives Ron a wedgie."
-//joeGivesWedgie('Bob');    // "Joe gives Bob a wedgie."
 
 var joeReceivesWedgie = partialRight(wedgie, 'Joe');
-joeReceivesWedgie('Ron', 'Gampesh'); // "Ron gives Gampesh a wedgie."
+joeReceivesWedgie('Ron', 'Suren'); // "Ron gives Suren a wedgie."
 joeReceivesWedgie('Bob'); // "Bob gives Joe a wedgie."

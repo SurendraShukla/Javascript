@@ -1,4 +1,4 @@
-// Revealing Pattern
+// Module Revealing Pattern : Make all this private and reveal/public the things which are required to be public
 
 function ClosureFun() {
 
