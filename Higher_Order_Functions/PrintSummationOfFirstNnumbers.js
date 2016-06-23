@@ -27,3 +27,6 @@ function cube(val) {
 summationOfFirstNnumbers(console.log)(identity)(10);
 summationOfFirstNnumbers(console.log)(square)(10);
 summationOfFirstNnumbers(console.log)(cube)(10);
+
+// SummationOfSquaresOfFirstNnumbers
+// SummationOfSquaresOfFirstNnumbers

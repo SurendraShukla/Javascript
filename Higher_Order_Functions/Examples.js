@@ -3,7 +3,6 @@
 setTimeout(function (){ console.log("Hello") }, 3000);
 
 // Can create specific function from general function.
-// Create small, reusable chunks of code that can then be used as building blocks.
 var add=function(a,b) {
     return a + b;
 }
@@ -11,7 +10,9 @@ var add=function(a,b) {
 // General above age Comparison function
 // Function should be able to generate specific function
 
-// Factory function : Getter for object
+// Factory function :
+// Want a function which accepts a property_name as input and it return a method.
+// The return method will accept an object and return property value if object has it
 var obj = {id: 6, name : "Pen", cost : 50, units : 70, category : 1};
 
 
