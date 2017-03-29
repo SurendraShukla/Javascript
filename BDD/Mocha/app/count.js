@@ -9,12 +9,11 @@ exports.countAnswers = {
         console.log(counter);
         function myLoop() {
             return setTimeout(function () {
-                counter++;
-                console.log(counter);
+                console.log(++counter);
                 if (counter < end) {
                     myLoop();
                 }
-            }, 100)
+            }, 100);
         }
         this.delayCounter = myLoop();
 
