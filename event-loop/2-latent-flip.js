@@ -3,7 +3,9 @@ $.on('button', 'click', function onClick() {
         console.log('You clicked the button!');
     }, 2000);
 });
-
+$.on('button', 'click', function logger() {
+    console.log('Logged');
+});
 console.log("Hi!");
 
 setTimeout(function timeout() {
