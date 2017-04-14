@@ -19,3 +19,5 @@ function ClosureFun() {
 	return {setter : setPrivateVal,  getter: getPrivateVal};
 	
 }
+
+obj = ClosureFun();
