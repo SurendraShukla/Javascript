@@ -1,10 +1,10 @@
 var fiboancciSeriesList = [];
 
-function populateFiboancciSeries(no) {
+function populateFibonacciSeries(no) {
 
 	if(-1 == no) {return;}
 
-	populateFiboancciSeries(no-1);
+	populateFibonacciSeries(no-1);
 
 	if( (0 == no) || (1 == no) ) {
 		return fiboancciSeriesList[no]=no;
@@ -14,7 +14,7 @@ function populateFiboancciSeries(no) {
 
 }
 
-populateFiboancciSeries(10);
+populateFibonacciSeries(10);
 console.log(fiboancciSeriesList);
 
 // 0 1 1 2 3 5 8 13 21 34 55

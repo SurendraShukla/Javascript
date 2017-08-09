@@ -1,7 +1,7 @@
-function sayHi(phrase, who) {
-    console.log( phrase + ', ' + who );
+function logger(val) {
+    console.log( val );
 }
 
-setTimeout(sayHi, 1000, "Surendra", "Shukla"); // Hello, Surendra
+setTimeout(logger, 1000, 2000);
 
 // http://javascript.info/settimeout-setinterval
