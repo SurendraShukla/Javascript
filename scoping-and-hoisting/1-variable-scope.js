@@ -9,12 +9,20 @@ if(true) {
 console.log("j=["+j+"]");
 
 
+if(false) {
+    var k=30;
+}
+console.log(k);
+
+
 function fun() {
 	console.log("i=["+i+"]");
-	var k=30;
+	var l=40;
 }
 fun();
-console.log("k=["+k+"]");
+console.log("k=["+l+"]");
+
+console.log(m);
 
 // IE7; LET for block level scope
 // let l=40;

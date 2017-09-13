@@ -6,26 +6,27 @@
 *
 * */
 function* player(name) {
-    console.log('name received'); // (A)
+    console.log('Name received'); // (A)
     var life = 1000;
-    yield 'Hello' + name; // (B)
+    yield 'Hello ' + name; // (B)
     yield 'You have a life of a ' + life + ' years'; // (C)
 }
 
 // Lets create our generator object
 // Since our function acceps a name, we need
 // to pass this name right away
-var p = player('Goku');
+var p = player('Suren');
 // Notice that although it seems like you executed
 // the function above, it does not print the console statement
 // at line (A)
 
+console.log('Anything printed is not printed yet.');
 
 // Invoking next() for the first time causes
 // line (A) to be printed and then
 // pauses at line (B).
 // Notice how the first next() does not take any argument
-console.log(p.next().value); // Prints 'name received' followed by 'Hello Goku'(which is this console log)
+console.log(p.next().value); // Prints 'name received' followed by 'Hello Suren'(which is this console log)
 
 // Line (C) gets printed then paused
 console.log(p.next().value); // Prints 'You have a life of a 1000 years'

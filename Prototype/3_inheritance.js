@@ -18,3 +18,4 @@ function GrandChildFunction() {
 }
 
 var grandChild = new GrandChildFunction();
+console.log(grandChild);

@@ -16,7 +16,7 @@ async function add1(x) {
 }
 
 add1(10).then(v => {
-    console.log(v);  // prints 60 after 2 seconds.
+    console.log('add1:'+v);  // prints 60 after 2 seconds.
 });
 
 async function add2(x) {
@@ -26,32 +26,17 @@ async function add2(x) {
 }
 
 add2(10).then(v => {
-    console.log(v);  // prints 60 after 4 seconds.
+    console.log('add2:'+v);  // prints 60 after 4 seconds.
 });
 
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds){
-            break;
-        }
-    }
-}
+function add3(x) {
 
-
-function resolveAfter2Seconds(x) {
-    sleep(1000);
-    return x;
-}
-
-async function add1(x) {
     var a = resolveAfter2Seconds(20);
     var b = resolveAfter2Seconds(30);
-    return x + await a + await b;
+    setTimeout(() => {
+        return x + a + b;
+    }, 1000);
 }
 
-add1(10).then(v => {
-    console.log(v);  // prints 60 after 2 seconds.
-});
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
