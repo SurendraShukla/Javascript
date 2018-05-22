@@ -1,0 +1,3 @@
+{
+  "exclude": ["*instrumented.js", "**/coverage/**", "**/report/**", "**/nyc-coverge/**",  "**/nyc-report/**", "**/istanbul-coverge/**",  "**/istanbul-report/**"]
+}

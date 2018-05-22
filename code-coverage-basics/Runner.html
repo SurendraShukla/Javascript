@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Test Runner</title>
+      <script type="text/javascript" src="calculator_instrumented.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    if(window.__coverage__) {
+      setTimeout(function () {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST","http://localhost:3000/",false);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        // xhttp.setRequestHeader("x-filename", "cal");
+        xhttp.send(JSON.stringify(window.__coverage__));
+      }, 1000);
+    }
+    </script>
+  </body>
+</html>

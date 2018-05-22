@@ -1,0 +1,9 @@
+
+var __cov_bCgJgkn1An6PM37kWGErRA = (Function('return this'))();
+if (!__cov_bCgJgkn1An6PM37kWGErRA.__coverage__) { __cov_bCgJgkn1An6PM37kWGErRA.__coverage__ = {}; }
+__cov_bCgJgkn1An6PM37kWGErRA = __cov_bCgJgkn1An6PM37kWGErRA.__coverage__;
+if (!(__cov_bCgJgkn1An6PM37kWGErRA['/Users/sshukla/Desktop/repos-test/basic-coverage-example/calculator.js'])) {
+   __cov_bCgJgkn1An6PM37kWGErRA['/Users/sshukla/Desktop/repos-test/basic-coverage-example/calculator.js'] = {"path":"/Users/sshukla/Desktop/repos-test/basic-coverage-example/calculator.js","s":{"1":1,"2":1,"3":0,"4":1,"5":0,"6":0},"b":{},"f":{"1":0,"2":0,"3":0},"fnMap":{"1":{"name":"Calculator","line":1,"loc":{"start":{"line":1,"column":0},"end":{"line":1,"column":22}}},"2":{"name":"add","line":2,"loc":{"start":{"line":2,"column":4},"end":{"line":2,"column":23}}},"3":{"name":"subtract","line":6,"loc":{"start":{"line":6,"column":4},"end":{"line":6,"column":28}}}},"statementMap":{"1":{"start":{"line":1,"column":0},"end":{"line":14,"column":1}},"2":{"start":{"line":2,"column":4},"end":{"line":4,"column":5}},"3":{"start":{"line":3,"column":8},"end":{"line":3,"column":21}},"4":{"start":{"line":6,"column":4},"end":{"line":8,"column":5}},"5":{"start":{"line":7,"column":8},"end":{"line":7,"column":21}},"6":{"start":{"line":10,"column":4},"end":{"line":13,"column":5}}},"branchMap":{}};
+}
+__cov_bCgJgkn1An6PM37kWGErRA = __cov_bCgJgkn1An6PM37kWGErRA['/Users/sshukla/Desktop/repos-test/basic-coverage-example/calculator.js'];
+function Calculator(){__cov_bCgJgkn1An6PM37kWGErRA.f['1']++;function add(x,y){__cov_bCgJgkn1An6PM37kWGErRA.f['2']++;__cov_bCgJgkn1An6PM37kWGErRA.s['3']++;return x+y;}function subtract(x,y){__cov_bCgJgkn1An6PM37kWGErRA.f['3']++;__cov_bCgJgkn1An6PM37kWGErRA.s['5']++;return x-y;}__cov_bCgJgkn1An6PM37kWGErRA.s['6']++;return{add:add,subtract:subtract};}
