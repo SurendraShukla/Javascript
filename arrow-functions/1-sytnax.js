@@ -1,14 +1,18 @@
 var incrementByOne = function (x) { return x + 1; };
-var addition = function (x, y) { return x + y; };
-
 console.log(incrementByOne(10));
+
+// with block body, explicit "return" needed
+var incrementByOneArrowFunction = x => {return x + 1};
+console.log(incrementByOneArrowFunction(10));
+
+
+var addition = function (x, y) { return x + y; };
 console.log(addition(10, 20));
 
-var incrementByOneArrowFunction = x => x + 1;
+// concise body syntax, implied "return"
 var additionArrowFunction = (x, y) => x + y;
-
-console.log(incrementByOneArrowFunction(10));
 console.log(additionArrowFunction(10, 20));
+
 
 function fun() {
     console.log(this);
