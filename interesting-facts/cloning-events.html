@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="container">
+  <div class="hello">Hello</div>
+    <br />
+  <div class="goodbye">Goodbye</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+  <script type="text/javascript">
+    $( ".hello" ).click(function(){console.log('Clicked');})
+    $( ".hello" ).clone().appendTo( ".goodbye" );
+    // console.log($( ".goodbye" ).html());
+  </script>
+</body>
+</html>
