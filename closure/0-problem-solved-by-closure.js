@@ -2,6 +2,18 @@
  * 
  */
 
+
+var myAlerts = [];
+
+for (var i = 0; i < 5; i++) {
+    myAlerts.push(
+        function inner() {
+            console.log(i);
+        }
+    );
+}
+
+
 /**
  * Problem without closure
  */
@@ -20,6 +32,11 @@ for (var i = 1; i <= 5; i++) {
 
 /**
  * LET - Solves this by creating closure
+ *
+ * let in the loop can re-binds it to each iteration of the loop,
+ * making sure to re-assign it the value from the end of the previous loop iteration,
+ * so it can be used to avoid issue with closures.
+ *
  *
  */
 for (let i = 1; i <= 5; i++) {

@@ -1,5 +1,7 @@
 ### Execution context, Scope chain and JavaScript internals
 `Execution context (EC)` is defined as the `environment/scope in which JavaScript code is executed`. <br />By environment means the value of _this_, _variables_, _objects_, and _functions_ JavaScript code has access to, constitutes it’s environment. <br/>
+In JS `Environment`is a data structure that provides that storage space to variables.
+
 
 * ##### Execution context types
   1. `Global execution context (GEC)` The default environment in which code is executed for the first time.
@@ -31,6 +33,7 @@
 ##### Links
 * http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/
 * https://hackernoon.com/execution-context-in-javascript-319dd72e8e2c
+* http://speakingjs.com/es5/ch16.html - Environments: Managing Variables
 
     
 
