@@ -1,6 +1,6 @@
 ###### JavaScript has a concurrency model based on an _event loop_.
 
-#### Modern JavaScript Engine
+### JavaScript Glossary
 1. `Stack` **function** calls form a stack of frames.
 2. `Heap` **objects** are allocated in a heap (Denotes a large mostly unstructured region of memory).
 3. `Queue` A JavaScript runtime uses a message queue, which is a **list of messages to be processed**. 
