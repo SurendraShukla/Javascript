@@ -8,7 +8,7 @@ In `ES6`, `let` was introduced as a way `to scope a variable to a block`, avoidi
 
 #### Things to remember
 * `Redeclaring` the same variable within the same function or block scope `raises` a `SyntaxError`.
-* `Temporal dead zone` - In hoisting, `let variables are not initialized` until their definition is evaluated. 
+* `Temporal dead zone` - In hoisting, `let/const/class variables are not initialized` until their definition is evaluated. 
   * **Accessing the variable before the initialization** results in a ReferenceError.
   * The variable is in a `temporal dead zone` from the _start of the block_ until the _initialization_ is processed.
 * 

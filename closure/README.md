@@ -1,6 +1,6 @@
 ### Closure
 
-Closure (also _lexica closure_ or _function closure_) is a technique for implementing `lexically scoped` `name binding` in a language with `first-class functions`.
+Closure (also _lexical closure_ or _function closure_) is a technique for implementing `lexically scoped` `name binding` in a language with `first-class functions`.
 > `Name binding` is about finding out **_what data a variable (identifier) references_**.  
 > The **scope** is really important here, as that is the thing that will **_determine how a binding is resolved_**.
 > 

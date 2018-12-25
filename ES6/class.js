@@ -1,6 +1,10 @@
 class MyClass {
-    private quantity;
+    quantity;
     constructor(quantity) {
         this.quantity = quantity;
     }
 }
+
+class A {}
+obj = new A();
+

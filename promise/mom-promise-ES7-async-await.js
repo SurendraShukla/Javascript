@@ -1,9 +1,8 @@
-/* ES7 */
 const isMomHappy = true;
 
 // Promise
 const willIGetNewPhone = new Promise(
-        (resolve, reject) => {
+    (resolve, reject) => {
         if (isMomHappy) {
             const phone = {
                 brand: 'Samsung',
@@ -12,22 +11,22 @@ const willIGetNewPhone = new Promise(
             resolve(phone);
         } else {
             const reason = new Error('mom is not happy');
-reject(reason);
-}
+            reject(reason);
+        }
 
-}
+    }
 );
 
 // 2nd promise
 async function showOff(phone) {
     return new Promise(
-            (resolve, reject) => {
+        (resolve, reject) => {
             var message = 'Hey friend, I have a new ' +
                 phone.color + ' ' + phone.brand + ' phone';
 
-    resolve(message);
-}
-);
+            resolve(message);
+        }
+    );
 };
 
 // call our promise
@@ -46,6 +45,6 @@ async function askMom() {
     }
 }
 
-(async () => {
+(async() => {
     await askMom();
 })();
