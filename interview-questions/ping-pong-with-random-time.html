@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="stop-timer-button">Stop ping pong console printing</button>
+
+<script>
+var setTimeoutObj;
+(function printPingPong(str) {
+	console.log(str);
+	setTimeoutObj = setTimeout(
+		printPingPong, 
+		Math.round(Math.random() * (3000 - 500)) + 500, 
+		(str === "pong") ? "ping" : "pong"
+	);
+})('pong');
+
+document.getElementById('stop-timer-button').addEventListener("click", () => {clearTimeout(setTimeoutObj)});
+</script>
+
+</body>
+</html>
