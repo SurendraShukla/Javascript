@@ -1,3 +1,4 @@
+#### Some useful features
 1. `for...of` statement iterates over data that the **iterable object** defines to be iterated over.  
    * Includes **built-in** String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and **user-defined iterables**
 
@@ -23,4 +24,5 @@
 5. Arrow function
 6. Spread syntax (splat operator)
 7. Promise
-8.
+8. `async/await` (ES2017)
+9. Template Literals
