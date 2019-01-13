@@ -1,0 +1,13 @@
+<button id="myBtn" value="Click">Click</button>
+<script type="text/javascript">
+document.getElementById("myBtn").addEventListener('click', ()=> {
+  Promise.resolve().then(() => console.log('Microtask 1'));
+  console.log('Listener 1');
+});
+document.getElementById("myBtn").addEventListener('click', ()=> {
+  Promise.resolve().then(() => console.log('Microtask 2'));
+  console.log('Listener 2');
+});
+
+document.getElementById("myBtn").click();
+</script>
